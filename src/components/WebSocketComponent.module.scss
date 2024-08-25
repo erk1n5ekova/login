@@ -1,0 +1,71 @@
+.WebSocketComponent {
+	.content {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		background-color: #3d3d3d;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+		.messagesContainer {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			margin-bottom: 20px;
+
+			.messageContent {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+
+				.userPhoto {
+					object-position: center;
+					object-fit: cover;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+				}
+			}
+
+			.myMessage {
+				align-self: flex-end;
+				background-color: #6a0dad;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+
+			.otherMessage {
+				align-self: flex-start;
+				background-color: #4b0082;
+				color: #ffffff;
+				padding: 10px;
+				border-radius: 10px;
+			}
+		}
+
+		.inputField {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 5px;
+			border: 1px solid #5a5a5a;
+			border-radius: 5px;
+			background-color: #4b0082;
+			color: #ffffff;
+		}
+
+		.sendButton {
+			margin-bottom: 10px;
+			padding: 10px 20px;
+			background-color: #6a0dad;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #5a0dab;
+			}
+		}
+	}
+}
